@@ -65,14 +65,8 @@ export default function Navbar() {
           <div className="flex items-center justify-between h-18 py-3">
             {/* Logo */}
             <Link to="/" className="flex items-center gap-3 group">
-              <div className="relative">
-                <div className="w-11 h-11 rounded-xl bg-gradient-to-br from-blue-600 to-blue-900 flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300">
-                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
-                    <path d="M13 2L4.09344 12.6879C3.74463 13.1064 3.57023 13.3157 3.56756 13.4925C3.56524 13.6461 3.63372 13.7923 3.75324 13.8889C3.89073 14 4.16054 14 4.70017 14H12L11 22L19.9066 11.3121C20.2554 10.8936 20.4298 10.6843 20.4324 10.5075C20.4348 10.3539 20.3663 10.2077 20.2468 10.1111C20.1093 10 19.8395 10 19.2998 10H12L13 2Z" 
-                      fill="white" stroke="white" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
-                  </svg>
-                </div>
-                <div className="absolute -bottom-0.5 -right-0.5 w-3 h-3 bg-amber-400 rounded-full animate-pulse"></div>
+              <div className="relative flex items-center justify-center h-14 w-auto group-hover:scale-105 transition-transform duration-300">
+                <img src="/logo.jpg" alt="Sunil Transenergy Pvt. Ltd." className="h-full object-contain mix-blend-multiply" />
               </div>
               <div>
                 <div className="font-black text-gray-900 text-base leading-tight tracking-tight" style={{ fontFamily: 'Montserrat, sans-serif' }}>

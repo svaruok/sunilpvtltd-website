@@ -82,8 +82,8 @@ export default function Footer() {
           {/* Company Info */}
           <div className="lg:col-span-1">
             <div className="flex items-center gap-3 mb-5">
-              <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-blue-500 to-blue-800 flex items-center justify-center">
-                <Zap size={18} className="text-white" />
+              <div className="h-12 w-auto bg-white rounded-lg p-1 overflow-hidden">
+                <img src="/logo.jpg" alt="Sunil Transenergy Pvt. Ltd." className="h-full object-contain" />
               </div>
               <div>
                 <div className="font-black text-white text-sm leading-tight" style={{ fontFamily: 'Montserrat' }}>
