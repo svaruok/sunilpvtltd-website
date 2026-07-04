@@ -13,7 +13,7 @@ const values = [
 ]
 
 const timeline = [
-  { year: '2022', title: 'Company Founded', desc: 'Sunil Transenergy Pvt. Ltd. incorporated in April 2022 in Aurangabad, Maharashtra with a vision to transform power infrastructure.' },
+  { year: '2022', title: 'Company Founded', desc: 'Sunil Transenergy Pvt. Ltd. incorporated in April 2022 in Chhatrapati Sambhajinagar, Maharashtra with a vision to transform power infrastructure.' },
   { year: '2022', title: 'First Major Project', desc: 'Successfully executed first major transformer installation project, establishing our technical credibility in the region.' },
   { year: '2023', title: 'Team Expansion', desc: 'Grew the engineering team to handle larger EPC projects across Maharashtra. Established service operations.' },
   { year: '2023', title: 'ISO Certification', desc: 'Achieved ISO 9001:2015 quality management certification, reinforcing our commitment to excellence.' },

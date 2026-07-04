@@ -75,7 +75,7 @@ const testimonials = [
   },
   {
     name: 'Vikram Patil',
-    role: 'Director, Aurangabad Industries',
+    role: 'Director, Chhatrapati Sambhajinagar Industries',
     text: 'We have been partnering with Sunil Transenergy for our industrial electrical needs for 2 years. Reliable, professional and technically sound team.',
     rating: 5,
   },
@@ -84,10 +84,10 @@ const testimonials = [
 // ---------- FAQ ----------
 const faqs = [
   { q: 'What types of transformers do you install?', a: 'We specialize in installation of distribution transformers, power transformers, dry-type transformers, hermetically sealed transformers, and furnace duty transformers across all capacities.' },
-  { q: 'What is your service area?', a: 'We serve clients across Maharashtra with primary focus on Aurangabad, Pune, Nashik, Nagpur and surrounding districts. We also undertake projects across India for major clients.' },
+  { q: 'What is your service area?', a: 'We serve clients across Maharashtra with primary focus on Chhatrapati Sambhajinagar, Pune, Nashik, Nagpur and surrounding districts. We also undertake projects across India for major clients.' },
   { q: 'Do you provide maintenance contracts?', a: 'Yes, we offer comprehensive annual maintenance contracts (AMC) for all electrical systems we install, as well as standalone maintenance services for existing infrastructure.' },
   { q: 'What certifications do you hold?', a: 'Sunil Transenergy Pvt. Ltd. holds ISO 9001:2015 quality management certification along with various industry-specific approvals and electrical contractor licenses.' },
-  { q: 'How quickly can you respond to emergencies?', a: 'Our emergency response team is available 24/7. We typically respond within 2-4 hours for critical power infrastructure issues in and around Aurangabad.' },
+  { q: 'How quickly can you respond to emergencies?', a: 'Our emergency response team is available 24/7. We typically respond within 2-4 hours for critical power infrastructure issues in and around Chhatrapati Sambhajinagar.' },
 ]
 
 export default function Home() {
@@ -270,7 +270,7 @@ export default function Home() {
                 <span className="block gradient-text-blue">Infrastructure Excellence</span>
               </h2>
               <p className="text-gray-600 text-base leading-relaxed mb-6">
-                Sunil Transenergy Pvt. Ltd. is a premier electrical engineering company based in Aurangabad, Maharashtra, incorporated in April 2022. We specialize in power transmission, transformer installation, EPC projects, and complete electrical infrastructure solutions.
+                Sunil Transenergy Pvt. Ltd. is a premier electrical engineering company based in Chhatrapati Sambhajinagar, Maharashtra, incorporated in April 2022. We specialize in power transmission, transformer installation, EPC projects, and complete electrical infrastructure solutions.
               </p>
               <p className="text-gray-600 text-base leading-relaxed mb-8">
                 Our experienced team of electrical engineers and technicians brings world-class expertise to every project — from small industrial installations to large-scale substation construction — with an unwavering commitment to safety, quality, and on-time delivery.
@@ -278,7 +278,7 @@ export default function Home() {
               <div className="grid grid-cols-2 gap-4 mb-8">
                 {[
                   { label: 'Registered in India', detail: 'CIN: U31909MH2022PTC380948' },
-                  { label: 'Headquartered at', detail: 'Aurangabad, Maharashtra' },
+                  { label: 'Headquartered at', detail: 'Chhatrapati Sambhajinagar, Maharashtra' },
                   { label: 'Directors', detail: 'Sunil Pawar, Baliram Pawar' },
                   { label: 'Capital', detail: '₹2.00 Crore' },
                 ].map((item) => (
@@ -605,7 +605,7 @@ export default function Home() {
                     </div>
                     <div>
                       <div className="text-xs text-gray-500 uppercase tracking-wider">Visit Us</div>
-                      <div className="text-white font-semibold text-sm">Itkheda, Aurangabad, Maharashtra 431001</div>
+                      <div className="text-white font-semibold text-sm">AURIC, Shendra MIDC, Chhatrapati Sambhajinagar 431154</div>
                     </div>
                   </div>
                 </div>

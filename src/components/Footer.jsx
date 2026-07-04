@@ -93,7 +93,7 @@ export default function Footer() {
               </div>
             </div>
             <p className="text-gray-400 text-sm leading-relaxed mb-6">
-              Leading electrical engineering and power infrastructure company in Aurangabad, Maharashtra. Delivering excellence in power transmission and electrical solutions since 2022.
+              Leading electrical engineering and power infrastructure company in Chhatrapati Sambhajinagar, Maharashtra. Delivering excellence in power transmission and electrical solutions since 2022.
             </p>
             <div className="space-y-3">
               <a href="tel:+919765492339" className="flex items-start gap-3 text-gray-400 hover:text-blue-400 transition-colors group text-sm">
@@ -104,9 +104,9 @@ export default function Footer() {
                 <Mail size={15} className="mt-0.5 shrink-0 group-hover:scale-110 transition-transform" />
                 <span>sunilind23@gmail.com</span>
               </a>
-              <div className="flex items-start gap-3 text-gray-400 text-sm">
-                <MapPin size={15} className="mt-0.5 shrink-0 text-blue-400" />
-                <span>R H No B-08, Chaudhary Thakkar Pride, Itkheda, Aurangabad, MH 431001</span>
+              <div className="flex items-start gap-3 text-gray-400 group text-sm">
+                <MapPin size={15} className="mt-0.5 shrink-0 group-hover:scale-110 transition-transform" />
+                <span>Plot No. 69/2, Sector No. 05, AURIC, Shendra Industrial Area, Chhatrapati Sambhajinagar - 431154 (M.S.)</span>
               </div>
             </div>
           </div>

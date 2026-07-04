@@ -75,9 +75,9 @@ export default function Contact() {
               {
                 icon: MapPin,
                 title: 'Visit Us',
-                primary: 'Aurangabad, Maharashtra',
-                secondary: 'R H No B-08, Itkheda, 431001',
-                href: 'https://maps.google.com/?q=Aurangabad,Maharashtra',
+                primary: 'Chhatrapati Sambhajinagar',
+                secondary: 'Plot No. 69/2, Sector No. 05, AURIC, Shendra Industrial Area - 431154',
+                href: 'https://maps.google.com/?q=AURIC,Shendra+Industrial+Area,Chhatrapati+Sambhajinagar',
                 color: 'from-emerald-500 to-emerald-700',
               },
               {
@@ -244,7 +244,7 @@ export default function Contact() {
               <div className="rounded-2xl overflow-hidden shadow-xl border border-gray-100" style={{ height: '360px' }}>
                 <iframe
                   title="Sunil Transenergy Location"
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3751.7866!2d75.3147!3d19.8956!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bdba3216a5db5ad%3A0x4e5890cf2c9a4a2f!2sAurangabad%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1000000000000"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d119777.67138760927!2d75.2954845!3d19.8956037!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bdb9815a369bc63%3A0x712d538eda3cbfaa!2sChhatrapati%20Sambhajinagar%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin"
                   width="100%"
                   height="100%"
                   style={{ border: 0 }}
@@ -261,10 +261,8 @@ export default function Contact() {
                   <div className="flex items-start gap-3">
                     <MapPin size={16} className="text-blue-500 mt-0.5 shrink-0" />
                     <div>
-                      <div className="font-semibold text-gray-800">R H No B-08, G No 83,</div>
-                      <div>Chaudhary Thakkar Pride, Itkheda,</div>
-                      <div>Behind Vrundavan Colony,</div>
-                      <div className="font-semibold text-gray-800">Aurangabad, Maharashtra – 431001</div>
+                      <div className="font-semibold text-gray-800">Chhatrapati Sambhajinagar – 431154 (M.S.)</div>
+                      <div className="text-gray-500 text-sm mt-1">Plot No. 69/2, Sector No. 05, AURIC, Shendra MIDC</div>
                     </div>
                   </div>
                   <div className="flex items-center gap-3">
