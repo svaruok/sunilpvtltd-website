@@ -43,7 +43,7 @@ const serviceLinks = [
   'Maintenance Services',
 ]
 
-export default function Footer() {
+export default function Footer({ onOpenInquiry }) {
   const currentYear = new Date().getFullYear()
 
   return (
@@ -140,6 +140,12 @@ export default function Footer() {
                   <ArrowRight size={13} className="group-hover:translate-x-1 transition-transform" />
                   Contact Us
                 </Link>
+              </li>
+              <li>
+                <button onClick={onOpenInquiry} className="flex items-center gap-2 text-gray-400 hover:text-blue-400 transition-colors text-sm group w-full text-left">
+                  <ArrowRight size={13} className="group-hover:translate-x-1 transition-transform" />
+                  Enquiry
+                </button>
               </li>
             </ul>
           </div>

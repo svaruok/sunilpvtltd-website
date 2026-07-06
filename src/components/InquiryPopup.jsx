@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { X, Send, UploadCloud } from 'lucide-react';
 
-export default function InquiryPopup() {
+export default function InquiryPopup({ forceOpen, onClose }) {
   const [isOpen, setIsOpen] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [fileName, setFileName] = useState('');
@@ -30,6 +30,19 @@ export default function InquiryPopup() {
     }
   }, []);
 
+  useEffect(() => {
+    if (forceOpen) {
+      setIsSubmitted(false);
+      setIsOpen(true);
+      generateCaptcha();
+    }
+  }, [forceOpen]);
+
+  const handleClose = () => {
+    setIsOpen(false);
+    if (onClose) onClose();
+  };
+
   const generateCaptcha = () => {
     setCaptchaParams({
       num1: Math.floor(Math.random() * 10) + 1,
@@ -53,7 +66,7 @@ export default function InquiryPopup() {
     
     // Close the popup after a short delay showing the success message
     setTimeout(() => {
-      setIsOpen(false);
+      handleClose();
     }, 2500);
   };
 
@@ -78,7 +91,7 @@ export default function InquiryPopup() {
           >
             {/* Close Button */}
             <button
-              onClick={() => setIsOpen(false)}
+              onClick={handleClose}
               className="absolute top-4 right-4 text-gray-400 hover:text-white transition-colors z-10 bg-black/20 hover:bg-black/40 rounded-full p-1"
             >
               <X size={20} />

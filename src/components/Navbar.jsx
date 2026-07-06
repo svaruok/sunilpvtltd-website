@@ -96,6 +96,7 @@ export default function Navbar({ onOpenInquiry }) {
                 </NavLink>
               ))}
               <button
+                type="button"
                 onClick={onOpenInquiry}
                 className="nav-link px-4 py-2 rounded-lg text-sm font-medium transition-all duration-200 text-gray-700 hover:text-blue-600 hover:bg-blue-50"
               >
@@ -152,6 +153,7 @@ export default function Navbar({ onOpenInquiry }) {
                   </NavLink>
                 ))}
                 <button
+                  type="button"
                   onClick={() => {
                     setIsOpen(false);
                     if (onOpenInquiry) onOpenInquiry();
