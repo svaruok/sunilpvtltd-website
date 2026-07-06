@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
@@ -12,12 +13,14 @@ import ScrollToTop from './components/ScrollToTop'
 import InquiryPopup from './components/InquiryPopup'
 
 function App() {
+  const [isInquiryOpen, setIsInquiryOpen] = useState(false);
+
   return (
     <Router>
       <ScrollToTop />
       <div className="min-h-screen bg-white relative">
-        <InquiryPopup />
-        <Navbar />
+        <InquiryPopup forceOpen={isInquiryOpen} onClose={() => setIsInquiryOpen(false)} />
+        <Navbar onOpenInquiry={() => setIsInquiryOpen(true)} />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />

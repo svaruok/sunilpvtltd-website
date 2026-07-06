@@ -13,7 +13,7 @@ const navItems = [
   { label: 'Contact', path: '/contact' },
 ]
 
-export default function Navbar() {
+export default function Navbar({ onOpenInquiry }) {
   const [isOpen, setIsOpen] = useState(false)
   const [scrolled, setScrolled] = useState(false)
   const location = useLocation()
@@ -95,6 +95,12 @@ export default function Navbar() {
                   {item.label}
                 </NavLink>
               ))}
+              <button
+                onClick={onOpenInquiry}
+                className="nav-link px-4 py-2 rounded-lg text-sm font-medium transition-all duration-200 text-gray-700 hover:text-blue-600 hover:bg-blue-50"
+              >
+                Enquiry
+              </button>
             </div>
 
             {/* CTA Button */}
@@ -145,6 +151,15 @@ export default function Navbar() {
                     {item.label}
                   </NavLink>
                 ))}
+                <button
+                  onClick={() => {
+                    setIsOpen(false);
+                    if (onOpenInquiry) onOpenInquiry();
+                  }}
+                  className="block w-full text-left px-4 py-3 text-base font-medium text-gray-900 hover:bg-blue-50 hover:text-blue-600 transition-colors"
+                >
+                  Enquiry
+                </button>
                 <div className="pt-3 border-t border-gray-100 mt-2">
                   <a href="tel:+919765492339" className="flex items-center gap-2 text-sm text-gray-600 py-2 px-4">
                     <Phone size={14} /> +91 97654 92339
