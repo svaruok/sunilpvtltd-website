@@ -9,12 +9,14 @@ import Projects from './pages/Projects'
 import Gallery from './pages/Gallery'
 import Contact from './pages/Contact'
 import ScrollToTop from './components/ScrollToTop'
+import InquiryPopup from './components/InquiryPopup'
 
 function App() {
   return (
     <Router>
       <ScrollToTop />
-      <div className="min-h-screen bg-white">
+      <div className="min-h-screen bg-white relative">
+        <InquiryPopup />
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
